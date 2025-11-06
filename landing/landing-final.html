@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Landing — Venda do Combo & Amostra Grátis</title>
+    <meta name="description" content="Acelere sua renda com nosso método comprovado — confira a oferta do Combo e receba uma amostra grátis agora." />
+    <meta property="og:title" content="Venda do Combo — Aumente sua Renda" />
+    <meta property="og:description" content="Acelere sua renda com nosso método prático. Oferta especial do Combo + amostra grátis." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tailwind Play CDN (rapidez para protótipo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuração rápida do Tailwind (cores primárias)
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0b6efd',
+              accent: '#0ea5ff'
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial']
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Pequenas correções locais para fontes e foco */
+      :root { color-scheme: light; }
+      .focus-ring:focus { outline: 3px solid rgba(59,130,246,0.25); outline-offset: 2px; }
+    </style>
+  </head>
+  <body class="antialiased bg-white text-slate-900 font-sans">
+
+    <!-- Header -->
+    <header class="border-b py-4">
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-primary" aria-hidden>
+            <rect width="24" height="24" rx="6" fill="#0b6efd" />
+            <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          <span class="font-semibold text-lg text-primary">SuaMarca</span>
+        </div>
+        <nav aria-label="menu" class="hidden md:flex gap-6 text-sm text-slate-600">
+          <a href="#como-funciona" class="hover:text-slate-900">Como funciona</a>
+          <a href="#depoimentos" class="hover:text-slate-900">Depoimentos</a>
+          <a href="#precos" class="hover:text-slate-900">Preços</a>
+        </nav>
+        <div class="md:hidden"> <!-- placeholder para menu mobile -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero / Acima da Dobra -->
+    <main>
+      <section class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 py-14 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+          <!-- Conteúdo -->
+          <div class="z-10">
+            <p class="inline-block bg-gradient-to-r from-accent to-primary text-white px-3 py-1 rounded-full text-xs font-medium">Lançamento</p>
+
+            <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">Transforme conhecimento em renda: o método prático que funciona</h1>
+
+            <p class="mt-4 text-slate-600 max-w-xl">Aprenda passo a passo a criar, validar e vender seu produto digital. Oferta especial do Combo com materiais, templates e suporte — ou experimente uma amostra grátis agora.</p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <!-- CTA principal: Venda do Combo -->
+              <a href="#precos" class="inline-flex items-center justify-center rounded-lg bg-primary text-white px-5 py-3 text-sm font-semibold shadow hover:bg-sky-600 focus-ring" id="cta-combo">Venda do Combo</a>
+
+              <!-- CTA secundária: Amostra Grátis -> abre modal de captura -->
+              <button id="open-sample" class="inline-flex items-center justify-center rounded-lg border border-slate-200 text-primary bg-white px-5 py-3 text-sm font-semibold hover:bg-slate-50 focus-ring" aria-controls="modal-sample" aria-expanded="false">Amostra Grátis</button>
+            </div>
+
+            <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+              <svg class="w-5 h-5 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4 10.586a1 1 0 011.414-1.414L8.414 12.172 15.293 5.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Garantia de qualidade — conteúdo testado por centenas de alunos.</span>
+            </div>
+          </div>
+
+          <!-- Ilustração / Visual -->
+          <div class="flex justify-center lg:justify-end">
+            <div class="w-full max-w-md bg-gradient-to-br from-sky-50 to-white rounded-2xl p-6 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c3c2e8d5f0f1c1e5b3f8f1a2a6c7e9e" alt="Ilustração do produto" class="w-full rounded-md object-cover h-56">
+              <div class="mt-4">
+                <h3 class="text-lg font-semibold">Resultados Reais</h3>
+                <p class="text-sm text-slate-600 mt-2">Modelos, scripts e roteiro para você implementar e vender com mais confiança.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Background decorativo -->
+        <div aria-hidden class="absolute inset-y-0 right-0 w-1/2 hidden lg:block">
+          <svg class="absolute top-0 right-0 transform translate-x-20 -translate-y-16" width="560" height="560" viewBox="0 0 560 560" fill="none">
+            <circle cx="280" cy="280" r="280" fill="#f0f9ff" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Seção de preços (ancora para Venda do Combo) -->
+      <section id="precos" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="text-2xl font-bold">Oferta do Combo</h2>
+          <p class="mt-2 text-slate-600">Pacote completo com templates, aulas gravadas e suporte — preço promocional por tempo limitado.</p>
+
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 border rounded-lg">
+              <h3 class="font-semibold">Básico</h3>
+              <p class="mt-2 text-lg font-bold">R$97</p>
+              <p class="mt-2 text-sm text-slate-600">Amostra grátis + material introdutório.</p>
+              <a class="mt-4 inline-block w-full text-center rounded-md bg-primary text-white py-2" href="#" role="button">Comprar</a>
+            </div>
+            <div class="p-6 border rounded-lg">
+              <h3 class="font-semibold">Combo</h3>
+              <p class="mt-2 text-lg font-bold">R$297</p>
+              <p class="mt-2 text-sm text-slate-600">Tudo do básico + templates e consultoria.</p>
+              <a class="mt-4 inline-block w-full text-center rounded-md bg-primary text-white py-2" href="#" role="button">Comprar Combo</a>
+            </div>
+            <div class="p-6 border rounded-lg">
+              <h3 class="font-semibold">Premium</h3>
+              <p class="mt-2 text-lg font-bold">R$597</p>
+              <p class="mt-2 text-sm text-slate-600">Mentoria e revisão de oferta.</p>
+              <a class="mt-4 inline-block w-full text-center rounded-md bg-primary text-white py-2" href="#" role="button">Quero Premium</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos (placeholder) -->
+      <section id="depoimentos" class="py-12 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h3 class="text-xl font-semibold">O que nossos alunos dizem</h3>
+          <p class="mt-4 text-slate-600">"Consegui vender meu primeiro curso em 30 dias." — Joana</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8">
+        <div class="max-w-7xl mx-auto px-6 text-sm text-slate-500 text-center">
+          © 2025 SuaMarca. Todos os direitos reservados.
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- Modal: Amostra Grátis -->
+    <div id="modal-sample" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 p-4" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+        <div class="flex justify-between items-center">
+          <h4 class="text-lg font-semibold">Amostra Grátis</h4>
+          <button id="close-modal" class="text-slate-400 hover:text-slate-600 focus-ring">Fechar</button>
+        </div>
+        <p class="mt-2 text-slate-600">Deixe seus dados que enviaremos a amostra por e-mail.</p>
+
+        <form id="sample-form" class="mt-4 grid gap-3">
+          <label class="sr-only" for="sample-name">Nome</label>
+          <input id="sample-name" name="name" type="text" required placeholder="Seu nome" class="px-3 py-2 border rounded-md focus-ring" />
+
+          <label class="sr-only" for="sample-email">Email</label>
+          <input id="sample-email" name="email" type="email" required placeholder="seu@exemplo.com" class="px-3 py-2 border rounded-md focus-ring" />
+
+          <div class="flex items-center gap-3">
+            <button type="submit" class="inline-flex items-center justify-center px-4 py-2 bg-primary text-white rounded-md">Quero a Amostra</button>
+            <button type="button" id="modal-cancel" class="px-4 py-2 border rounded-md">Cancelar</button>
+          </div>
+        </form>
+
+        <p id="sample-success" class="mt-3 text-sm text-green-600 hidden">Obrigado! Verifique seu e-mail em instantes.</p>
+      </div>
+    </div>
+
+    <script>
+      // Modal open/close
+      const openBtn = document.getElementById('open-sample');
+      const modal = document.getElementById('modal-sample');
+      const closeBtn = document.getElementById('close-modal');
+      const cancelBtn = document.getElementById('modal-cancel');
+      const sampleForm = document.getElementById('sample-form');
+      const successMsg = document.getElementById('sample-success');
+
+      function showModal() {
+        modal.classList.remove('hidden');
+        modal.setAttribute('aria-hidden','false');
+        openBtn.setAttribute('aria-expanded','true');
+        // foco no primeiro campo
+        setTimeout(()=>document.getElementById('sample-name').focus(),50);
+      }
+      function hideModal() {
+        modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden','true');
+        openBtn.setAttribute('aria-expanded','false');
+      }
+
+      openBtn.addEventListener('click', showModal);
+      closeBtn.addEventListener('click', hideModal);
+      cancelBtn.addEventListener('click', hideModal);
+      modal.addEventListener('click', (e)=>{ if(e.target===modal) hideModal(); });
+
+      // Simulação de submit: aqui o dev deve integrar Google Forms ou endpoint
+      sampleForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        // simples validação
+        const name = document.getElementById('sample-name').value.trim();
+        const email = document.getElementById('sample-email').value.trim();
+        if(!name || !email) return;
+
+        // Mostrar sucesso (no futuro: enviar para Zapier / Google Forms)
+        successMsg.classList.remove('hidden');
+        sampleForm.reset();
+        setTimeout(()=>{ hideModal(); successMsg.classList.add('hidden'); }, 2200);
+      });
+
+      // Accessibility: close modal with Esc
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && !modal.classList.contains('hidden')) hideModal(); });
+    </script>
+
+  </body>
+</html>
