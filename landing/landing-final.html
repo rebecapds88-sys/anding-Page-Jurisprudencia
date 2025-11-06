@@ -38,24 +38,35 @@
   <body class="antialiased bg-white text-slate-900 font-sans">
 
     <!-- Header -->
-    <header class="border-b py-4">
+    <header class="py-4 bg-[#004c7a]">
       <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-primary" aria-hidden>
-            <rect width="24" height="24" rx="6" fill="#0b6efd" />
-            <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="aria-hidden">
+            <rect width="24" height="24" rx="6" fill="#FFBF00" />
+            <path d="M7 12h10" stroke="#004c7a" stroke-width="1.5" stroke-linecap="round" />
           </svg>
-          <span class="font-semibold text-lg text-primary">SuaMarca</span>
+          <span class="font-semibold text-lg" style="color:#FFBF00">JURISPRUDÊNCIA</span>
         </div>
-        <nav aria-label="menu" class="hidden md:flex gap-6 text-sm text-slate-600">
-          <a href="#como-funciona" class="hover:text-slate-900">Como funciona</a>
-          <a href="#depoimentos" class="hover:text-slate-900">Depoimentos</a>
-          <a href="#precos" class="hover:text-slate-900">Preços</a>
+        <nav aria-label="menu" class="hidden md:flex gap-6 text-sm text-white/90">
+          <a href="#como-funciona" class="hover:text-white">Como funciona</a>
+          <a href="#depoimentos" class="hover:text-white">Depoimentos</a>
+          <a href="#precos" class="hover:text-white">Preços</a>
         </nav>
         <div class="md:hidden"> <!-- placeholder para menu mobile -->
         </div>
       </div>
     </header>
+
+    <!-- Feedbacks — visíveis no topo (Seção 3) -->
+    <section id="feedbacks" class="bg-white border-b">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-700 max-w-2xl">
+          <strong class="block text-slate-900">O que nossos alunos falam</strong>
+          <span class="text-slate-600">"Consegui validar minha oferta em 2 semanas e já tenho clientes pagantes." — Maria</span>
+        </div>
+        <div class="text-sm text-slate-500">Avaliações médias: <strong class="text-slate-800">4.8/5</strong> • Mais de <strong>320</strong> alunos</div>
+      </div>
+    </section>
 
     <!-- Hero / Acima da Dobra -->
     <main>
@@ -88,11 +99,11 @@
 
           <!-- Ilustração / Visual -->
           <div class="flex justify-center lg:justify-end">
-            <div class="w-full max-w-md bg-gradient-to-br from-sky-50 to-white rounded-2xl p-6 shadow-lg">
-              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c3c2e8d5f0f1c1e5b3f8f1a2a6c7e9e" alt="Ilustração do produto" class="w-full rounded-md object-cover h-56">
+            <div class="w-full max-w-md bg-[#004c7a] text-white rounded-2xl p-6 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c3c2e8d5f0f1c1e5b3f8f1a2a6c7e9e" alt="Ilustração do produto" class="w-full rounded-md object-cover h-56 opacity-95">
               <div class="mt-4">
-                <h3 class="text-lg font-semibold">Resultados Reais</h3>
-                <p class="text-sm text-slate-600 mt-2">Modelos, scripts e roteiro para você implementar e vender com mais confiança.</p>
+                <h3 class="text-lg font-semibold text-white">Resultados Reais</h3>
+                <p class="text-sm text-white/90 mt-2">Modelos, scripts e roteiro para você implementar e vender com mais confiança.</p>
               </div>
             </div>
           </div>
